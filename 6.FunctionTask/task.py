@@ -1,4 +1,4 @@
-#Recursion function
+ #Recursion function
 #Ex:1
 def square(n):
     if n==0:

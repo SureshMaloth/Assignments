@@ -211,6 +211,8 @@ print(result)
 second_result=word.split("a")
 print(second_result)
 
+
+
 word_2="ma@lo@th@Su@re@sh"
 split_word=word_2.split("@")
 print(split_word)

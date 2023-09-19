@@ -1,5 +1,5 @@
 #1.write a python program to merge two lists
-list_1=eval(input("enter the list1:"))
+list_1=list(map(int,input("enter the val:").split()))
 list_2=eval(input("enter the list2:"))
 print(list_1+list_2)
 
