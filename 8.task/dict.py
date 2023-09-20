@@ -1,5 +1,6 @@
 
 #
+
 employ_details={
     101:{"Name":"Suresh","Domain":"Python","Emp_id":"MT-01931","Mail":"suresh.marolix@gmail.com"},
     102:{"Name":"Abhi","Domain":"Devops","Emp_id":"MT-01932","Mail":"abhi.marolix@gmail.com"},
@@ -41,10 +42,11 @@ elif check_the_input=="remove":
 else:
     print("Enter The Correct Employee Id")
 
-                    
+                   
 #
 employee_details={}
-for i in range(5):
+
+def add_employee_details():
     Name=(input("enter the name:"))
     Domain=(input("enter the Domain:"))
     Mail=(input("enter the Mail:"))
@@ -58,16 +60,17 @@ for i in range(5):
         "EmpId":Empid
     }
     employee_details[EmpNo]=employees
+for i in range(int(input("Nbr of emp:"))):
+    add_employee_details()
 
+#print(employee_details)
 check_the_input=input("the vale is remove or update r add r check:")
 
 
 if check_the_input=="add":
-    add_key=int(input("enter empId:"))
-    employee=eval(input("enter emp Dtails:"))
-    employee_details[add_key]=employee
+    
     print(employee_details)
-    print(employee_details[add_key])
+    
     print(len(employee_details))
 elif check_the_input=="check":
     given_empId=int(input("enter empId:"))
