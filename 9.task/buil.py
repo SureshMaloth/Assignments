@@ -17,7 +17,7 @@ def mul_ele(values):
 def div_ele(values):
     total=0
     for i in values:
-        total//=i
+        total/=i
     return total
 
 values=list(map(int,(input("enter the num:").split())))
