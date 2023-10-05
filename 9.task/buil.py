@@ -17,7 +17,7 @@ def mul_ele(values):
 def div_ele(values):
     total=0
     for i in values:
-        total/=i
+        total//=i
     return total
 
 values=list(map(int,(input("enter the num:").split())))
@@ -36,9 +36,17 @@ print(div_values)
 #Variable length arguments. 
 #2. Write a program to enter employee details and also filter  the stored employee  details  with name and empid and designation and email. 
 def employee_details(*emp_details):
-    employee_nbr=int(input("enter the empNbr:"))
-    if employee_nbr in emp_details[0]:
-        print(emp_details[0][employee_nbr])
+    
+    for emp in emp_details:
+        val=input("enter the val:")
+        res=list(emp.values())
+        for id in res:
+            if val in id.values():
+                print(id)
+            else:
+                print("Pls Enter Valid Value")
+  
+    
 
 emp_details={}
 for i in range(int(input("enter the empNo:"))):
