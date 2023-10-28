@@ -1,4 +1,4 @@
-
+"""
 #
 
 employ_details={
@@ -41,7 +41,7 @@ elif check_the_input=="remove":
         print("Not Found The Employee Id")
 else:
     print("Enter The Correct Employee Id")
-
+"""
                    
 #
 employee_details={}
